@@ -8,8 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LogInViewController: UIViewController {
 
+    @IBOutlet weak var UserNameInput: UITextField!
+    
+    @IBOutlet weak var PasswordInput: UITextField!
+    
+    @IBAction func LoginButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func SignUpButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
