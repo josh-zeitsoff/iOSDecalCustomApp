@@ -1,27 +1,28 @@
 //
-//  SignUpViewController.swift
+//  CreateEventViewController.swift
 //  iOSDecalCustomApp
 //
-//  Created by Cathy Pham Le on 4/4/17.
+//  Created by Joshua Zeitsoff on 4/4/17.
 //  Copyright © 2017 Cathy Pham Le. All rights reserved.
 //
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class CreateEventViewController: UIViewController {
 
-    @IBOutlet weak var EmailInput: UITextField!
+    @IBOutlet weak var EventNameInput: UITextField!
     
-    @IBOutlet weak var UserNameSignUpInput: UITextField!
     
-    @IBOutlet weak var PasswordSignUpInput: UITextField!
+    @IBOutlet weak var EventDateInput: UITextField!
     
-    @IBOutlet weak var FirstNameInput: UITextField!
     
-    @IBOutlet weak var LastNameInput: UITextField!
     
-    @IBAction func RegisterButton(_ sender: Any) {
+    
+    @IBAction func CreateEventButton(_ sender: Any) {
     }
+     
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

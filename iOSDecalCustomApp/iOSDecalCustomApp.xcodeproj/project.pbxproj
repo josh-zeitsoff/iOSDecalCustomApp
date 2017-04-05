@@ -15,6 +15,7 @@
 		4C7DE0251E94752500D649F8 /* iOSDecalCustomAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE0241E94752500D649F8 /* iOSDecalCustomAppTests.swift */; };
 		4C7DE0301E94752500D649F8 /* iOSDecalCustomAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE02F1E94752500D649F8 /* iOSDecalCustomAppUITests.swift */; };
 		4C7DE0401E947F8700D649F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */; };
+		5B5B339D1E9485B300BB29C4 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4C7DE02F1E94752500D649F8 /* iOSDecalCustomAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDecalCustomAppUITests.swift; sourceTree = "<group>"; };
 		4C7DE0311E94752500D649F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7DE00F1E94752500D649F8 /* AppDelegate.swift */,
+				5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */,
 				4C7DE0111E94752500D649F8 /* LogInViewController.swift */,
 				4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */,
 				4C7DE0131E94752500D649F8 /* Main.storyboard */,
@@ -265,6 +268,7 @@
 				4C7DE0401E947F8700D649F8 /* SignUpViewController.swift in Sources */,
 				4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */,
 				4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */,
+				5B5B339D1E9485B300BB29C4 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +513,7 @@
 				4C7DE0361E94752500D649F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C7DE0371E94752500D649F8 /* Build configuration list for PBXNativeTarget "iOSDecalCustomAppTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				4C7DE0391E94752500D649F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C7DE03A1E94752500D649F8 /* Build configuration list for PBXNativeTarget "iOSDecalCustomAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				4C7DE03C1E94752500D649F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
