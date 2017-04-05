@@ -16,6 +16,15 @@
 		4C7DE0301E94752500D649F8 /* iOSDecalCustomAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE02F1E94752500D649F8 /* iOSDecalCustomAppUITests.swift */; };
 		4C7DE0401E947F8700D649F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */; };
 		5B5B339D1E9485B300BB29C4 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */; };
+		5B9EFE281E956BD400890AD1 /* EventDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE271E956BD400890AD1 /* EventDashboardViewController.swift */; };
+		5B9EFE2A1E956C4E00890AD1 /* EventDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE291E956C4E00890AD1 /* EventDashboardTableViewCell.swift */; };
+		5B9EFE2C1E956E0900890AD1 /* ChooseInvitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE2B1E956E0900890AD1 /* ChooseInvitesViewController.swift */; };
+		5B9EFE2E1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE2D1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift */; };
+		5B9EFE301E956F8C00890AD1 /* MyEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE2F1E956F8C00890AD1 /* MyEventViewController.swift */; };
+		5B9EFE321E9572DF00890AD1 /* WhosComingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE311E9572DF00890AD1 /* WhosComingViewController.swift */; };
+		5B9EFE341E95732600890AD1 /* WhosComingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */; };
+		5B9EFE361E95742B00890AD1 /* CodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */; };
+		5B9EFE381E95752800890AD1 /* AttendingEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,15 @@
 		4C7DE0311E94752500D649F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		5B9EFE271E956BD400890AD1 /* EventDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDashboardViewController.swift; path = iOSDecalCustomApp/EventDashboardViewController.swift; sourceTree = "<group>"; };
+		5B9EFE291E956C4E00890AD1 /* EventDashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDashboardTableViewCell.swift; sourceTree = "<group>"; };
+		5B9EFE2B1E956E0900890AD1 /* ChooseInvitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseInvitesViewController.swift; sourceTree = "<group>"; };
+		5B9EFE2D1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseInvitesTableViewCell.swift; sourceTree = "<group>"; };
+		5B9EFE2F1E956F8C00890AD1 /* MyEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEventViewController.swift; sourceTree = "<group>"; };
+		5B9EFE311E9572DF00890AD1 /* WhosComingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhosComingViewController.swift; sourceTree = "<group>"; };
+		5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhosComingTableViewCell.swift; sourceTree = "<group>"; };
+		5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeScannerViewController.swift; sourceTree = "<group>"; };
+		5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +119,12 @@
 		4C7DE00E1E94752500D649F8 /* iOSDecalCustomApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B9EFE261E956B7200890AD1 /* AttendingEvent */,
+				5B9EFE251E956B5F00890AD1 /* MyEvent */,
+				5B9EFE241E956B4A00890AD1 /* CreateEvent */,
+				5B9EFE231E956AAE00890AD1 /* EventDashboard */,
+				5B9EFE221E956AA000890AD1 /* SignIn */,
 				4C7DE00F1E94752500D649F8 /* AppDelegate.swift */,
-				5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */,
-				4C7DE0111E94752500D649F8 /* LogInViewController.swift */,
-				4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */,
 				4C7DE0131E94752500D649F8 /* Main.storyboard */,
 				4C7DE0161E94752500D649F8 /* Assets.xcassets */,
 				4C7DE0181E94752500D649F8 /* LaunchScreen.storyboard */,
@@ -129,6 +149,54 @@
 				4C7DE0311E94752500D649F8 /* Info.plist */,
 			);
 			path = iOSDecalCustomAppUITests;
+			sourceTree = "<group>";
+		};
+		5B9EFE221E956AA000890AD1 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4C7DE0111E94752500D649F8 /* LogInViewController.swift */,
+				4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		5B9EFE231E956AAE00890AD1 /* EventDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5B9EFE271E956BD400890AD1 /* EventDashboardViewController.swift */,
+				5B9EFE291E956C4E00890AD1 /* EventDashboardTableViewCell.swift */,
+			);
+			name = EventDashboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5B9EFE241E956B4A00890AD1 /* CreateEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */,
+				5B9EFE2B1E956E0900890AD1 /* ChooseInvitesViewController.swift */,
+				5B9EFE2D1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift */,
+			);
+			name = CreateEvent;
+			sourceTree = "<group>";
+		};
+		5B9EFE251E956B5F00890AD1 /* MyEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5B9EFE2F1E956F8C00890AD1 /* MyEventViewController.swift */,
+				5B9EFE311E9572DF00890AD1 /* WhosComingViewController.swift */,
+				5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */,
+				5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */,
+			);
+			name = MyEvent;
+			sourceTree = "<group>";
+		};
+		5B9EFE261E956B7200890AD1 /* AttendingEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */,
+			);
+			name = AttendingEvent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +333,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9EFE301E956F8C00890AD1 /* MyEventViewController.swift in Sources */,
 				4C7DE0401E947F8700D649F8 /* SignUpViewController.swift in Sources */,
+				5B9EFE361E95742B00890AD1 /* CodeScannerViewController.swift in Sources */,
+				5B9EFE2C1E956E0900890AD1 /* ChooseInvitesViewController.swift in Sources */,
+				5B9EFE2E1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift in Sources */,
 				4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */,
+				5B9EFE341E95732600890AD1 /* WhosComingTableViewCell.swift in Sources */,
 				4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */,
+				5B9EFE321E9572DF00890AD1 /* WhosComingViewController.swift in Sources */,
+				5B9EFE2A1E956C4E00890AD1 /* EventDashboardTableViewCell.swift in Sources */,
+				5B9EFE281E956BD400890AD1 /* EventDashboardViewController.swift in Sources */,
 				5B5B339D1E9485B300BB29C4 /* CreateEventViewController.swift in Sources */,
+				5B9EFE381E95752800890AD1 /* AttendingEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

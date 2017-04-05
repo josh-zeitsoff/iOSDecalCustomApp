@@ -1,31 +1,29 @@
 //
-//  CreateEventViewController.swift
+//  MyEventViewController.swift
 //  iOSDecalCustomApp
 //
-//  Created by Joshua Zeitsoff on 4/4/17.
+//  Created by Joshua Zeitsoff on 4/5/17.
 //  Copyright © 2017 Cathy Pham Le. All rights reserved.
 //
 
 import UIKit
 
-class CreateEventViewController: UIViewController {
+class MyEventViewController: UIViewController {
 
-    @IBOutlet weak var EventNameInput: UITextField!
+    @IBOutlet weak var EventName: UILabel!
     
+    @IBOutlet weak var EventLocation: UILabel!
     
-    @IBOutlet weak var EventLocationInput: UITextField!
+    @IBOutlet weak var EventDate: UILabel!
     
+    @IBOutlet weak var EventTime: UILabel!
     
-
-    @IBOutlet weak var EventDateAndTimePicker: UIDatePicker!
-    
-    
-    @IBAction func CreateEventButton(_ sender: Any) {
+    @IBAction func SeeWhosComingButton(_ sender: Any) {
     }
-     
     
-    
-    
+    @IBOutlet weak var FractionAttending: UILabel!
+    @IBAction func ScanCodesButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

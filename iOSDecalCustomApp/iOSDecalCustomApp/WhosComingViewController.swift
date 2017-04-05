@@ -1,30 +1,18 @@
 //
-//  CreateEventViewController.swift
+//  WhosComingViewController.swift
 //  iOSDecalCustomApp
 //
-//  Created by Joshua Zeitsoff on 4/4/17.
+//  Created by Joshua Zeitsoff on 4/5/17.
 //  Copyright © 2017 Cathy Pham Le. All rights reserved.
 //
 
 import UIKit
 
-class CreateEventViewController: UIViewController {
+class WhosComingViewController: UIViewController {
 
-    @IBOutlet weak var EventNameInput: UITextField!
+    @IBOutlet weak var WhosComingTableView: UITableView!
     
-    
-    @IBOutlet weak var EventLocationInput: UITextField!
-    
-    
-
-    @IBOutlet weak var EventDateAndTimePicker: UIDatePicker!
-    
-    
-    @IBAction func CreateEventButton(_ sender: Any) {
-    }
-     
-    
-    
+    @IBOutlet weak var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

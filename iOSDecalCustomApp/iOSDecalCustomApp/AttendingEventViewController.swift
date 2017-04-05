@@ -1,30 +1,24 @@
 //
-//  CreateEventViewController.swift
+//  AttendingEventViewController.swift
 //  iOSDecalCustomApp
 //
-//  Created by Joshua Zeitsoff on 4/4/17.
+//  Created by Joshua Zeitsoff on 4/5/17.
 //  Copyright © 2017 Cathy Pham Le. All rights reserved.
 //
 
 import UIKit
 
-class CreateEventViewController: UIViewController {
+class AttendingEventViewController: UIViewController {
+    @IBOutlet weak var AttendingEventName: UILabel!
 
-    @IBOutlet weak var EventNameInput: UITextField!
+    @IBOutlet weak var AttendingEventDate: UILabel!
     
+    @IBOutlet weak var AttendingEventTime: UILabel!
     
-    @IBOutlet weak var EventLocationInput: UITextField!
+    @IBOutlet weak var AttendingEventLocation: UILabel!
+    @IBOutlet weak var AttendingEventHost: UILabel!
     
-    
-
-    @IBOutlet weak var EventDateAndTimePicker: UIDatePicker!
-    
-    
-    @IBAction func CreateEventButton(_ sender: Any) {
-    }
-     
-    
-    
+    @IBOutlet weak var MyQRCode: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
