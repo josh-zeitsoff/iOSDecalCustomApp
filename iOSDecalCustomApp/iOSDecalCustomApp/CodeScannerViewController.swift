@@ -10,8 +10,6 @@ import UIKit
 
 class CodeScannerViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var CameraImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
