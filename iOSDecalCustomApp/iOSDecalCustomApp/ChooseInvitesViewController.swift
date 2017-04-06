@@ -12,6 +12,10 @@ class ChooseInvitesViewController: UIViewController {
 
     @IBOutlet weak var ChooseInvitesTableView: UITableView!
     
+    @IBAction func invite(_ sender: UIButton) {
+        performSegue(withIdentifier: "unwindToCreate", sender: self)
+    }
+    
     @IBOutlet weak var InviteButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()

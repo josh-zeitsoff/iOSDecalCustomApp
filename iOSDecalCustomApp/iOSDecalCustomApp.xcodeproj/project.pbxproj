@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA2B2EA1E95EB3C00785122 /* lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2B2E91E95EB3C00785122 /* lists.swift */; };
 		4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE00F1E94752500D649F8 /* AppDelegate.swift */; };
 		4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE0111E94752500D649F8 /* LogInViewController.swift */; };
 		4C7DE0151E94752500D649F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7DE0131E94752500D649F8 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BA2B2E91E95EB3C00785122 /* lists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lists.swift; sourceTree = "<group>"; };
 		4C7DE00C1E94752500D649F8 /* iOSDecalCustomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDecalCustomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7DE00F1E94752500D649F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7DE0111E94752500D649F8 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BA2B2E41E95E45F00785122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BA2B2E91E95EB3C00785122 /* lists.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		4C7DE0031E94752400D649F8 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		4C7DE00E1E94752500D649F8 /* iOSDecalCustomApp */ = {
 			isa = PBXGroup;
 			children = (
+				0BA2B2E41E95E45F00785122 /* Model */,
 				5B9EFE261E956B7200890AD1 /* AttendingEvent */,
 				5B9EFE251E956B5F00890AD1 /* MyEvent */,
 				5B9EFE241E956B4A00890AD1 /* CreateEvent */,
@@ -338,6 +349,7 @@
 				5B9EFE361E95742B00890AD1 /* CodeScannerViewController.swift in Sources */,
 				5B9EFE2C1E956E0900890AD1 /* ChooseInvitesViewController.swift in Sources */,
 				5B9EFE2E1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift in Sources */,
+				0BA2B2EA1E95EB3C00785122 /* lists.swift in Sources */,
 				4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */,
 				5B9EFE341E95732600890AD1 /* WhosComingTableViewCell.swift in Sources */,
 				4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */,

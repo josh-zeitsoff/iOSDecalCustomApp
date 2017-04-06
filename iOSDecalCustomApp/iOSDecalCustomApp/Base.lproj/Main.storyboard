@@ -71,9 +71,12 @@
                     <connections>
                         <outlet property="PasswordInput" destination="CqV-tj-HB9" id="neX-Q7-IIh"/>
                         <outlet property="UserNameInput" destination="V2Z-B8-CH8" id="4s4-Fp-bl3"/>
+                        <segue destination="dhm-wW-Wap" kind="show" identifier="loginToDash" id="VY9-yZ-lzs"/>
+                        <segue destination="AMS-Ry-oKo" kind="show" identifier="loginToSignUp" id="82h-TM-U7N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Ie1-aR-HzZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-152.80000000000001" y="-104.7976011994003"/>
         </scene>
@@ -94,7 +97,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="Kqy-Zm-KjP" customClass="EventDashboardTableViewCell" customModule="iOSDecalCustomApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dashCell" rowHeight="83" id="Kqy-Zm-KjP" customClass="EventDashboardTableViewCell" customModule="iOSDecalCustomApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kqy-Zm-KjP" id="3Ew-Tc-7JR">
@@ -142,9 +145,13 @@
                     </view>
                     <connections>
                         <outlet property="EventDashboardTableView" destination="oEr-hT-mgN" id="3pu-hw-RlI"/>
+                        <segue destination="cnE-DC-ZOw" kind="show" identifier="dashToMyEvent" id="IG9-Bw-VuV"/>
+                        <segue destination="nFO-Fa-BUp" kind="show" identifier="dashToCreateEvent" id="HHO-dg-8hp"/>
+                        <segue destination="AHz-Zf-n4A" kind="show" identifier="dashToQREvent" id="7b1-dk-wIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTx-s1-pn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kR5-vV-QRn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="909.60000000000002" y="-92.203898050974516"/>
         </scene>
@@ -220,9 +227,12 @@
                         <outlet property="EventName" destination="mhS-ma-ihu" id="lSt-2x-bCG"/>
                         <outlet property="EventTime" destination="UNL-Ms-8Jo" id="0FG-nM-17S"/>
                         <outlet property="FractionAttending" destination="Ybc-qd-c0s" id="ZIL-AJ-Tfm"/>
+                        <segue destination="qxm-V3-GPS" kind="show" identifier="myEventToCamera" id="5uR-2R-yOQ"/>
+                        <segue destination="fTV-nU-Omx" kind="show" identifier="myEventToWhosComing" id="tw1-Rc-BqP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNl-Cn-7IO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="glF-Gl-AE8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1912.8" y="-86.806596701649184"/>
         </scene>
@@ -306,11 +316,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJs-xQ-y1Z" userLabel="Scan">
+                                <rect key="frame" x="283" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="scan:" destination="qxm-V3-GPS" eventType="touchUpInside" id="uNx-HF-eek"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="CameraImageView" destination="6kY-8U-U4K" id="DCh-my-8Xa"/>
+                        <segue destination="glF-Gl-AE8" kind="unwind" identifier="unwindToMyEvent" unwindAction="unwindToMyEventWithSegue:" id="YCF-U6-9jP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osd-Je-A08" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -423,6 +442,7 @@
                         <outlet property="LastNameInput" destination="7D3-yc-Cvg" id="iSH-Og-pl1"/>
                         <outlet property="PasswordSignUpInput" destination="Mt5-EC-oNw" id="F3e-T6-GpB"/>
                         <outlet property="UserNameSignUpInput" destination="maK-bL-cNL" id="dfq-Xx-nc8"/>
+                        <segue destination="Ie1-aR-HzZ" kind="unwind" identifier="unwindToLogin" unwindAction="unwindToLoginWithSegue:" id="UFe-4l-Bkh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayV-2l-bB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -512,9 +532,12 @@
                         <outlet property="EventDateAndTimePicker" destination="Dfo-qp-Yop" id="4yd-pQ-QBF"/>
                         <outlet property="EventLocationInput" destination="GgV-yG-4ok" id="YR9-3k-CoK"/>
                         <outlet property="EventNameInput" destination="wkt-LJ-T2n" id="t2S-le-J9P"/>
+                        <segue destination="vin-om-kOT" kind="show" identifier="createEventToInvite" id="Ud1-VX-jHU"/>
+                        <segue destination="kR5-vV-QRn" kind="unwind" identifier="unwindToDash" unwindAction="unwindToDashWithSegue:" id="iu0-0Q-fXe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNp-fT-d6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oX2-u7-TO9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="927.20000000000005" y="665.21739130434787"/>
         </scene>
@@ -602,7 +625,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="j9Q-9M-hbo" customClass="ChooseInvitesTableViewCell" customModule="iOSDecalCustomApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chooseInviteesCell" rowHeight="72" id="j9Q-9M-hbo" customClass="ChooseInvitesTableViewCell" customModule="iOSDecalCustomApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j9Q-9M-hbo" id="fPv-RD-HwA">
@@ -636,11 +659,9 @@
                                 <rect key="frame" x="136" y="605" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Invite"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="170-cY-Pxf">
-                                <rect key="frame" x="146" y="614" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Invite:" destination="vin-om-kOT" eventType="touchUpInside" id="8UM-cf-ssP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -648,11 +669,12 @@
                     <connections>
                         <outlet property="ChooseInvitesTableView" destination="2js-MP-38I" id="ycF-E8-7Qp"/>
                         <outlet property="InviteButton" destination="dS8-sJ-tWd" id="8bN-cq-oXb"/>
+                        <segue destination="oX2-u7-TO9" kind="unwind" identifier="unwindToCreate" unwindAction="unwindToCreateWithSegue:" id="sav-VU-Qz4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jba-gs-gGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919.20000000000005" y="1390.2548725637182"/>
+            <point key="canvasLocation" x="927" y="1471"/>
         </scene>
     </scenes>
 </document>

@@ -21,7 +21,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var LastNameInput: UITextField!
     
     @IBAction func RegisterButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "unwindToLogin", sender: self)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

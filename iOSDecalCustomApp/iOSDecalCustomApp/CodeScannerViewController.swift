@@ -11,6 +11,9 @@ import UIKit
 class CodeScannerViewController: UIViewController {
 
     @IBOutlet weak var CameraImageView: UIImageView!
+    @IBAction func scan(_ sender: UIButton) {
+        performSegue(withIdentifier: "unwindToMyEvent", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

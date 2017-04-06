@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateEventViewController: UIViewController {
+class CreateEventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var EventNameInput: UITextField!
     
@@ -21,9 +21,12 @@ class CreateEventViewController: UIViewController {
     
     
     @IBAction func CreateEventButton(_ sender: Any) {
+        performSegue(withIdentifier: "unwindToDash", sender: self)
     }
      
-    
+    @IBAction func unwindToCreate(segue:UIStoryboardSegue) {
+        
+    }
     
     
     override func viewDidLoad() {
@@ -35,6 +38,32 @@ class CreateEventViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return pList[section]
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let p = pList[section]
+        return people[p]!.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "chooseInviteesCell", for: indexPath) as! ChooseInvitesTableViewCell
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let invitee = getPerson(indexPath: indexPath) {
+            performSegue(withIdentifier: "createEventToInvite", sender: self)
+        }
+        
     }
     
 

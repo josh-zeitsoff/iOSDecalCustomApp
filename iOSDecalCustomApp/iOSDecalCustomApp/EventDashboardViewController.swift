@@ -8,11 +8,17 @@
 
 import UIKit
 
-class EventDashboardViewController: UIViewController {
+class EventDashboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var EventDashboardTableView: UITableView!
     @IBAction func CreateEventButton(_ sender: Any) {
+        performSegue(withIdentifier: "dashToCreateEvent", sender: nil)
     }
+    
+    @IBAction func unwindToDash(segue:UIStoryboardSegue) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +30,35 @@ class EventDashboardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return eventTypes.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return eventTypes[section]
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let deats = eventTypes[section]
+        return events[deats]!.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dashCell", for: indexPath) as! EventDashboardTableViewCell
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let deats = getEvent(indexPath: indexPath) {
+            let eventType = eventTypes[indexPath.section]
+            if eventType == "Current Events" {
+                performSegue(withIdentifier: "dashToMyEvent", sender: self)
+            } else if eventType == "Invited To" {
+                performSegue(withIdentifier: "dashToQREvent", sender: self)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

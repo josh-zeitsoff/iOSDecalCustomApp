@@ -15,10 +15,16 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var PasswordInput: UITextField!
     
     @IBAction func LoginButton(_ sender: Any) {
+        performSegue(withIdentifier: "loginToDash", sender: nil)
+    }
+    
+    @IBAction func unwindToLogin(segue:UIStoryboardSegue) {
+
     }
     
     
     @IBAction func SignUpButton(_ sender: Any) {
+        performSegue(withIdentifier: "loginToSignUp", sender: nil)
     }
     
     override func viewDidLoad() {

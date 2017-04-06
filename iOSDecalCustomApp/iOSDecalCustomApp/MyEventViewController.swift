@@ -19,11 +19,18 @@ class MyEventViewController: UIViewController {
     @IBOutlet weak var EventTime: UILabel!
     
     @IBAction func SeeWhosComingButton(_ sender: Any) {
+        performSegue(withIdentifier: "myEventToWhosComing", sender: nil)
     }
     
     @IBOutlet weak var FractionAttending: UILabel!
     @IBAction func ScanCodesButton(_ sender: Any) {
+        performSegue(withIdentifier: "myEventToCamera", sender: nil)
     }
+    
+    @IBAction func unwindToMyEvent(segue:UIStoryboardSegue) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
