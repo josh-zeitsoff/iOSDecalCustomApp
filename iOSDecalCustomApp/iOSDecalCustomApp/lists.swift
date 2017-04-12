@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 //will change later, prob not string
-var events: [String: [String]] = ["Current Events": [], "Inited To": []]
+var events: [String: [String]] = ["Current Events": [], "Invited To": []]
 //
 
 let eventTypes = ["Current Events", "Invited To"]
