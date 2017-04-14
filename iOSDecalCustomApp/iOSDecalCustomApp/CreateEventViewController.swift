@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateEventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 

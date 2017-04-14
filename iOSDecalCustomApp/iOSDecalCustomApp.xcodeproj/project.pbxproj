@@ -51,7 +51,7 @@
 
 /* Begin PBXFileReference section */
 		0BA2B2E91E95EB3C00785122 /* lists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lists.swift; sourceTree = "<group>"; };
-		4C6F87A81EA0647600C10AC4 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		4C6F87A81EA0647600C10AC4 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		4C7DE00C1E94752500D649F8 /* iOSDecalCustomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDecalCustomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7DE00F1E94752500D649F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7DE0111E94752500D649F8 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +136,7 @@
 		4C7DE0031E94752400D649F8 = {
 			isa = PBXGroup;
 			children = (
+				4C6F87A81EA0647600C10AC4 /* GoogleService-Info (1).plist */,
 				4C7DE00E1E94752500D649F8 /* iOSDecalCustomApp */,
 				4C7DE0231E94752500D649F8 /* iOSDecalCustomAppTests */,
 				4C7DE02E1E94752500D649F8 /* iOSDecalCustomAppUITests */,
@@ -169,7 +170,6 @@
 				4C7DE0161E94752500D649F8 /* Assets.xcassets */,
 				4C7DE0181E94752500D649F8 /* LaunchScreen.storyboard */,
 				4C7DE01B1E94752500D649F8 /* Info.plist */,
-				4C6F87A81EA0647600C10AC4 /* GoogleService-Info (1).plist */,
 			);
 			path = iOSDecalCustomApp;
 			sourceTree = "<group>";

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AttendingEventViewController: UIViewController {
     @IBOutlet weak var AttendingEventName: UILabel!
