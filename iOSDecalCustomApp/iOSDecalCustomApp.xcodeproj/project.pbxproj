@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BA2B2EA1E95EB3C00785122 /* lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2B2E91E95EB3C00785122 /* lists.swift */; };
+		4C6F87A91EA0647600C10AC4 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F87A81EA0647600C10AC4 /* GoogleService-Info (1).plist */; };
 		4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE00F1E94752500D649F8 /* AppDelegate.swift */; };
 		4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE0111E94752500D649F8 /* LogInViewController.swift */; };
 		4C7DE0151E94752500D649F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7DE0131E94752500D649F8 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 		5B9EFE341E95732600890AD1 /* WhosComingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */; };
 		5B9EFE361E95742B00890AD1 /* CodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */; };
 		5B9EFE381E95752800890AD1 /* AttendingEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */; };
+		693D81D135FF2253CCBB2CBB /* Pods_iOSDecalCustomAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA18DACB56108E403C5CFBD0 /* Pods_iOSDecalCustomAppUITests.framework */; };
+		B774F10E22622829EAEC1FD5 /* Pods_iOSDecalCustomApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642585794FEDB162D2F18DBF /* Pods_iOSDecalCustomApp.framework */; };
+		D3EB6840B83FF1001A4C95C5 /* Pods_iOSDecalCustomAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A2E783A49EB1D84E1189DD /* Pods_iOSDecalCustomAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		0BA2B2E91E95EB3C00785122 /* lists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lists.swift; sourceTree = "<group>"; };
+		4C6F87A81EA0647600C10AC4 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		4C7DE00C1E94752500D649F8 /* iOSDecalCustomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDecalCustomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7DE00F1E94752500D649F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7DE0111E94752500D649F8 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		4C7DE02F1E94752500D649F8 /* iOSDecalCustomAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDecalCustomAppUITests.swift; sourceTree = "<group>"; };
 		4C7DE0311E94752500D649F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C7DE03F1E947F8700D649F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		599F59D44B65ACCA4E2BFAEC /* Pods-iOSDecalCustomAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDecalCustomAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDecalCustomAppUITests/Pods-iOSDecalCustomAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		5B9EFE271E956BD400890AD1 /* EventDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDashboardViewController.swift; path = iOSDecalCustomApp/EventDashboardViewController.swift; sourceTree = "<group>"; };
 		5B9EFE291E956C4E00890AD1 /* EventDashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDashboardTableViewCell.swift; sourceTree = "<group>"; };
@@ -71,6 +77,14 @@
 		5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhosComingTableViewCell.swift; sourceTree = "<group>"; };
 		5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeScannerViewController.swift; sourceTree = "<group>"; };
 		5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingEventViewController.swift; sourceTree = "<group>"; };
+		642585794FEDB162D2F18DBF /* Pods_iOSDecalCustomApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDecalCustomApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931B6A71A8276493A44001B5 /* Pods-iOSDecalCustomAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDecalCustomAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDecalCustomAppTests/Pods-iOSDecalCustomAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A2E783A49EB1D84E1189DD /* Pods_iOSDecalCustomAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDecalCustomAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA18DACB56108E403C5CFBD0 /* Pods_iOSDecalCustomAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDecalCustomAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49CF0366B7B9F9F4CDD4E94 /* Pods-iOSDecalCustomApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDecalCustomApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDecalCustomApp/Pods-iOSDecalCustomApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DCC57A05D7D0D6074A8356AB /* Pods-iOSDecalCustomAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDecalCustomAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDecalCustomAppUITests/Pods-iOSDecalCustomAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB109B75A272B40546FFDD7B /* Pods-iOSDecalCustomAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDecalCustomAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDecalCustomAppTests/Pods-iOSDecalCustomAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FDACCAF0FA6CABF70A7DC2F3 /* Pods-iOSDecalCustomApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDecalCustomApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDecalCustomApp/Pods-iOSDecalCustomApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B774F10E22622829EAEC1FD5 /* Pods_iOSDecalCustomApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EB6840B83FF1001A4C95C5 /* Pods_iOSDecalCustomAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693D81D135FF2253CCBB2CBB /* Pods_iOSDecalCustomAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +123,16 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		18040219582F9147D474D795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642585794FEDB162D2F18DBF /* Pods_iOSDecalCustomApp.framework */,
+				A7A2E783A49EB1D84E1189DD /* Pods_iOSDecalCustomAppTests.framework */,
+				AA18DACB56108E403C5CFBD0 /* Pods_iOSDecalCustomAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C7DE0031E94752400D649F8 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +140,8 @@
 				4C7DE0231E94752500D649F8 /* iOSDecalCustomAppTests */,
 				4C7DE02E1E94752500D649F8 /* iOSDecalCustomAppUITests */,
 				4C7DE00D1E94752500D649F8 /* Products */,
+				6A41010784173E4A56A2B8AF /* Pods */,
+				18040219582F9147D474D795 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +169,7 @@
 				4C7DE0161E94752500D649F8 /* Assets.xcassets */,
 				4C7DE0181E94752500D649F8 /* LaunchScreen.storyboard */,
 				4C7DE01B1E94752500D649F8 /* Info.plist */,
+				4C6F87A81EA0647600C10AC4 /* GoogleService-Info (1).plist */,
 			);
 			path = iOSDecalCustomApp;
 			sourceTree = "<group>";
@@ -210,6 +240,19 @@
 			name = AttendingEvent;
 			sourceTree = "<group>";
 		};
+		6A41010784173E4A56A2B8AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D49CF0366B7B9F9F4CDD4E94 /* Pods-iOSDecalCustomApp.debug.xcconfig */,
+				FDACCAF0FA6CABF70A7DC2F3 /* Pods-iOSDecalCustomApp.release.xcconfig */,
+				931B6A71A8276493A44001B5 /* Pods-iOSDecalCustomAppTests.debug.xcconfig */,
+				FB109B75A272B40546FFDD7B /* Pods-iOSDecalCustomAppTests.release.xcconfig */,
+				DCC57A05D7D0D6074A8356AB /* Pods-iOSDecalCustomAppUITests.debug.xcconfig */,
+				599F59D44B65ACCA4E2BFAEC /* Pods-iOSDecalCustomAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C7DE0341E94752500D649F8 /* Build configuration list for PBXNativeTarget "iOSDecalCustomApp" */;
 			buildPhases = (
+				6945A69E341D98BA1365F2C6 /* [CP] Check Pods Manifest.lock */,
 				4C7DE0081E94752400D649F8 /* Sources */,
 				4C7DE0091E94752400D649F8 /* Frameworks */,
 				4C7DE00A1E94752400D649F8 /* Resources */,
+				4383133713BBAF852241B7E7 /* [CP] Embed Pods Frameworks */,
+				5B6E6302863F848D92CBE61E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C7DE0371E94752500D649F8 /* Build configuration list for PBXNativeTarget "iOSDecalCustomAppTests" */;
 			buildPhases = (
+				5CAE5BD79FF9D0DFE810AB47 /* [CP] Check Pods Manifest.lock */,
 				4C7DE01C1E94752500D649F8 /* Sources */,
 				4C7DE01D1E94752500D649F8 /* Frameworks */,
 				4C7DE01E1E94752500D649F8 /* Resources */,
+				B7C2D9A2DF45F56F7B32F688 /* [CP] Embed Pods Frameworks */,
+				7763D5B85889439E7D6D1D5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C7DE03A1E94752500D649F8 /* Build configuration list for PBXNativeTarget "iOSDecalCustomAppUITests" */;
 			buildPhases = (
+				C3FCD7C4C2C178E4AE2D5C28 /* [CP] Check Pods Manifest.lock */,
 				4C7DE0271E94752500D649F8 /* Sources */,
 				4C7DE0281E94752500D649F8 /* Frameworks */,
 				4C7DE0291E94752500D649F8 /* Resources */,
+				C18BBD8932F77A4921146A45 /* [CP] Embed Pods Frameworks */,
+				71DE49D253F946B569002C0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +372,7 @@
 				4C7DE01A1E94752500D649F8 /* LaunchScreen.storyboard in Resources */,
 				4C7DE0171E94752500D649F8 /* Assets.xcassets in Resources */,
 				4C7DE0151E94752500D649F8 /* Main.storyboard in Resources */,
+				4C6F87A91EA0647600C10AC4 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +391,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4383133713BBAF852241B7E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSDecalCustomApp/Pods-iOSDecalCustomApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B6E6302863F848D92CBE61E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSDecalCustomApp/Pods-iOSDecalCustomApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CAE5BD79FF9D0DFE810AB47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6945A69E341D98BA1365F2C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71DE49D253F946B569002C0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSDecalCustomAppUITests/Pods-iOSDecalCustomAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7763D5B85889439E7D6D1D5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSDecalCustomAppTests/Pods-iOSDecalCustomAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7C2D9A2DF45F56F7B32F688 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSDecalCustomAppTests/Pods-iOSDecalCustomAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18BBD8932F77A4921146A45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSDecalCustomAppUITests/Pods-iOSDecalCustomAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3FCD7C4C2C178E4AE2D5C28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C7DE0081E94752400D649F8 /* Sources */ = {
@@ -507,6 +698,7 @@
 		};
 		4C7DE0351E94752500D649F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D49CF0366B7B9F9F4CDD4E94 /* Pods-iOSDecalCustomApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSDecalCustomApp/Info.plist;
@@ -519,6 +711,7 @@
 		};
 		4C7DE0361E94752500D649F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDACCAF0FA6CABF70A7DC2F3 /* Pods-iOSDecalCustomApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSDecalCustomApp/Info.plist;
@@ -531,6 +724,7 @@
 		};
 		4C7DE0381E94752500D649F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931B6A71A8276493A44001B5 /* Pods-iOSDecalCustomAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +739,7 @@
 		};
 		4C7DE0391E94752500D649F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB109B75A272B40546FFDD7B /* Pods-iOSDecalCustomAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +754,7 @@
 		};
 		4C7DE03B1E94752500D649F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC57A05D7D0D6074A8356AB /* Pods-iOSDecalCustomAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = iOSDecalCustomAppUITests/Info.plist;
@@ -572,6 +768,7 @@
 		};
 		4C7DE03C1E94752500D649F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599F59D44B65ACCA4E2BFAEC /* Pods-iOSDecalCustomAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = iOSDecalCustomAppUITests/Info.plist;
