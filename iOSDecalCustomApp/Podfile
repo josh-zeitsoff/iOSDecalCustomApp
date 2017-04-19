@@ -10,6 +10,7 @@ target 'iOSDecalCustomApp' do
   pod ‘Firebase/Core’
   pod 'Firebase/Auth'
   pod 'Google/SignIn'
+  pod ‘iOS-QR-Code-Encoder’
 
   target 'iOSDecalCustomAppTests' do
     inherit! :search_paths
