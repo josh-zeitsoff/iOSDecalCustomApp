@@ -380,6 +380,7 @@
                     </view>
                     <connections>
                         <outlet property="CameraImageView" destination="6kY-8U-U4K" id="DCh-my-8Xa"/>
+                        <outlet property="scanButton" destination="sJs-xQ-y1Z" id="0HO-qY-Bty"/>
                         <segue destination="glF-Gl-AE8" kind="unwind" identifier="unwindToMyEvent" unwindAction="unwindToMyEventWithSegue:" id="YCF-U6-9jP"/>
                     </connections>
                 </viewController>

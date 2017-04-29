@@ -29,7 +29,6 @@ class MyEventViewController: UIViewController {
     }
     
     @IBAction func unwindToMyEvent(segue:UIStoryboardSegue) {
-        
     }
     
     override func viewDidLoad() {
