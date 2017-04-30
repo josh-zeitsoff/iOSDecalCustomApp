@@ -14,6 +14,7 @@ target 'iOSDecalCustomApp' do
   pod 'Firebase/Auth'
   pod 'Google/SignIn'
   pod ‘SwiftQRCode’
+  pod 'MTBBarcodeScanner'
 
   target 'iOSDecalCustomAppTests' do
     inherit! :search_paths
