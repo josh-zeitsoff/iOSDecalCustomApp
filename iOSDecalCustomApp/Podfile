@@ -10,6 +10,7 @@ target 'iOSDecalCustomApp' do
   pod ‘Firebase/Core’
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
+  pod 'QRCode'
   pod 'Firebase/Auth'
   pod 'Google/SignIn'
   pod ‘SwiftQRCode’

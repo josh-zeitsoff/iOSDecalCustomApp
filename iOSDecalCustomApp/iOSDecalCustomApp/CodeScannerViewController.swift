@@ -14,19 +14,12 @@ class CodeScannerViewController: UIViewController {
     
     let scanner = QRCode()
     
-    @IBOutlet weak var CameraImageView: UIImageView!
-    
-    @IBAction func scan(_ sender: UIButton) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         scanner.prepareScan(view) { (stringValue) -> () in
             print(stringValue)
             // THIS IS WHERE YOU WOULD AUTHENTICATE THE QR CODE
-            //performSegue(withIdentifier: "unwindToMyEvent", sender: )
+            self.performSegue(withIdentifier: "unwindToMyEvent", sender: self)
         }
         scanner.scanFrame = view.bounds
     }
