@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_iOSDecalCustomAppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_iOSDecalCustomAppVersionString[];
+FOUNDATION_EXPORT double QRCodeVersionNumber;
+FOUNDATION_EXPORT const unsigned char QRCodeVersionString[];
 

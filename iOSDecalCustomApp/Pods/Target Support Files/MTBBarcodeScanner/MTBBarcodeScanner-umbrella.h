@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "MTBBarcodeScanner.h"
 
-FOUNDATION_EXPORT double Pods_iOSDecalCustomAppTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_iOSDecalCustomAppTestsVersionString[];
+FOUNDATION_EXPORT double MTBBarcodeScannerVersionNumber;
+FOUNDATION_EXPORT const unsigned char MTBBarcodeScannerVersionString[];
 

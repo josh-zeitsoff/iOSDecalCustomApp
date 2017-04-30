@@ -8,27 +8,34 @@
 
 import UIKit
 import Firebase
-import SwiftQRCode
+import MTBBarcodeScanner
 
 class CodeScannerViewController: UIViewController {
     
-    let scanner = QRCode()
+    @IBOutlet var previewView: UIView!
+    var scanner: MTBBarcodeScanner?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scanner.prepareScan(view) { (stringValue) -> () in
-            print(stringValue)
-            // THIS IS WHERE YOU WOULD AUTHENTICATE THE QR CODE
-            self.performSegue(withIdentifier: "unwindToMyEvent", sender: self)
-        }
-        scanner.scanFrame = view.bounds
+        
+        scanner = MTBBarcodeScanner(previewView: previewView)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        // start scan
-        scanner.startScan()
+        do {
+            try self.scanner?.startScanning(resultBlock: { codes in
+                if let codes = codes {
+                    for code in codes {
+                        let stringValue = code.stringValue!
+                        print("Found code: \(stringValue)")
+                    }
+                }
+            })
+        } catch {
+            NSLog("Unable to start scanning")
+        }
     }
 
     override func didReceiveMemoryWarning() {
