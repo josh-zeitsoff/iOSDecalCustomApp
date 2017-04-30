@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 import GoogleSignIn
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, GIDSignInUIDelegate {
     
     var handle: FIRAuthStateDidChangeListenerHandle?
 
@@ -37,7 +37,7 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // Firebase shit
-//        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signInSilently()
         handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
             if user != nil {
