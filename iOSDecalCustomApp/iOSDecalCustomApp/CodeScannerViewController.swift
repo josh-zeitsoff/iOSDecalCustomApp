@@ -8,17 +8,34 @@
 
 import UIKit
 import Firebase
+import SwiftQRCode
 
 class CodeScannerViewController: UIViewController {
-
+    
+    let scanner = QRCode()
+    
     @IBOutlet weak var CameraImageView: UIImageView!
+    
     @IBAction func scan(_ sender: UIButton) {
-        performSegue(withIdentifier: "unwindToMyEvent", sender: self)
+        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        scanner.prepareScan(view) { (stringValue) -> () in
+            print(stringValue)
+            // THIS IS WHERE YOU WOULD AUTHENTICATE THE QR CODE
+            //performSegue(withIdentifier: "unwindToMyEvent", sender: )
+        }
+        scanner.scanFrame = view.bounds
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // start scan
+        scanner.startScan()
     }
 
     override func didReceiveMemoryWarning() {

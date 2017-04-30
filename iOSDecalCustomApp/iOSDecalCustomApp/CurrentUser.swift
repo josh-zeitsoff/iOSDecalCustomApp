@@ -16,6 +16,7 @@ class CurrentUser {
     var QRCode: String!
     var hostedEvents: [String]?
     var invitedEvents: [String]?
+    var id: String?
     
     let dbRef = FIRDatabase.database().reference()
     
@@ -35,7 +36,7 @@ class CurrentUser {
     
     func getInvitedEvents(completion: @escaping ([String]) -> Void){
         var invitedEvents: [String] = []
-        dbref.child(firUsersNode).child(id).child(firInvitedEventsNode).observeSingleEvent(of: .value, with: { (snapshot) in
+        dbRef.child(firUsersNode).child(id!).child(firInvitedEventsNode).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                 if let invitedEventsDict = snapshot.value as? [String: AnyObject] {
                     for key in invitedEventsDict.keys {
@@ -78,18 +79,12 @@ class CurrentUser {
      */
     
     func addNewInvitedEvent(postID: String) {
-        dbRef.child(firUsersNode).child(id).child(firInvitedEventsNode).childByAutoId().setValue(postID)
+        dbRef.child(firUsersNode).child(id!).child(firInvitedEventsNode).childByAutoId().setValue(postID)
         // TODO
     }
     
     func addNewHostedEvent(postID: String) {
-        dbRef.child(firUsersNode).child(id).child(firHostedEventsNode).childByAutoId().setValue(postID)
-        // TODO
-    }
-    
-    
-    func addNewReadPost(postID: String) {
-        dbRef.child(firUsersNode).child(id).child(firReadPostsNode).childByAutoId().setValue(postID)
+        dbRef.child(firUsersNode).child(id!).child(firHostedEventsNode).childByAutoId().setValue(postID)
         // TODO
     }
     

@@ -17,7 +17,7 @@ var events: [String: [String]] = ["Current Events": [], "Invited To": []]
 
 let eventTypes = ["Current Events", "Invited To"]
 
-func getEvent(indexPath: IndexPath) -> Event? {
+func getEvent(indexPath: IndexPath) -> String? {
     let eventType = eventTypes[indexPath.section]
     if let eventsArray = events[eventType] {
         return eventsArray[indexPath.row]
@@ -78,7 +78,7 @@ func addEvent(date: String, host: String, invitedPeople: [String], location: Str
     let dict: [String:AnyObject] = [
         "date": date as AnyObject,
         "host" : host as AnyObject,
-        "invitedPeople" : invitedPeople as [AnyObject],
+        "invitedPeople" : invitedPeople as [String] as AnyObject,
         "location" : location as AnyObject,
         "username" : username as AnyObject
     ]
@@ -127,25 +127,25 @@ func store(data: Data, toPath path: String) {
 */
 
 
-func getEvents(user: CurrentUser, completion: @escaping ([Post]?) -> Void) {
+func getEvents(user: CurrentUser, completion: @escaping ([Event]?) -> Void) {
     let dbRef = FIRDatabase.database().reference()
     var eventArray: [Event] = []
     dbRef.child(firEventsNode).observeSingleEvent(of: .value, with: {
         (snapshot) in
         if snapshot.exists() {
             if let eventsDict = snapshot.value as? [String : AnyObject] {
-                user.getinvitedEvents(completion: { (usersInvitedEvents) in
+                user.getInvitedEvents(completion: { (usersInvitedEvents) in
                     for key in eventsDict.keys {
                         //double check only adding invited events
                         if usersInvitedEvents.contains(key) {
-                            let username = eventDict[key]?["username"] as! String
-                            let name = eventDict[key]?["name"] as! String
-                            let location = eventDict[key]?["location"] as! String
-                            let host = eventDict[key]?["host"] as! String
-                            let invitedPeople = eventDict[key]?["invitedPeople"] as! [String]
-                            let date = eventDict[key]?["date"] as! String
+                            let username = eventsDict[key]?["username"] as! String
+                            let name = eventsDict[key]?["name"] as! String
+                            let location = eventsDict[key]?["location"] as! String
+                            let host = eventsDict[key]?["host"] as! String
+                            let invitedPeople = eventsDict[key]?["invitedPeople"] as! [String]
+                            let date = eventsDict[key]?["date"] as! String
                             let event = Event(dateString: date, host: host, invitedPeople: invitedPeople, location: location, name: name, id: key)
-                            eventArray.append(post)
+                            eventArray.append(event)
                         }
                         
                     }
