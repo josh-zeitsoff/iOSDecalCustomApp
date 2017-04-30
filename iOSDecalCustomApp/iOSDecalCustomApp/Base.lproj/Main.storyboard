@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -356,31 +357,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6kY-8U-U4K">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXM-PK-K1F">
+                                <rect key="frame" x="16" y="208" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRE-wA-1t8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJs-xQ-y1Z" userLabel="Scan">
-                                <rect key="frame" x="283" y="617" width="46" height="30"/>
-                                <state key="normal" title="Scan"/>
-                                <connections>
-                                    <action selector="scan:" destination="qxm-V3-GPS" eventType="touchUpInside" id="uNx-HF-eek"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6kY-8U-U4K" firstAttribute="centerX" secondItem="eKP-Kv-ZGG" secondAttribute="centerX" id="5EJ-yY-3It"/>
-                            <constraint firstItem="6kY-8U-U4K" firstAttribute="height" secondItem="eKP-Kv-ZGG" secondAttribute="height" id="6sn-sA-Mr7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sJs-xQ-y1Z" secondAttribute="trailing" constant="30" id="Apf-6U-g0z"/>
-                            <constraint firstItem="sJs-xQ-y1Z" firstAttribute="leading" secondItem="eKP-Kv-ZGG" secondAttribute="leadingMargin" constant="267" id="GAC-tg-aRZ"/>
-                            <constraint firstItem="6kY-8U-U4K" firstAttribute="width" secondItem="eKP-Kv-ZGG" secondAttribute="width" id="PWI-8s-h52"/>
-                            <constraint firstItem="6kY-8U-U4K" firstAttribute="centerY" secondItem="eKP-Kv-ZGG" secondAttribute="centerY" id="Xh0-tB-Wof"/>
-                            <constraint firstItem="uGB-FZ-Eoj" firstAttribute="top" secondItem="sJs-xQ-y1Z" secondAttribute="bottom" constant="20" id="g8K-bF-eaX"/>
+                            <constraint firstItem="WRE-wA-1t8" firstAttribute="centerY" secondItem="eKP-Kv-ZGG" secondAttribute="centerY" id="4i6-g7-kP3"/>
+                            <constraint firstItem="WRE-wA-1t8" firstAttribute="width" secondItem="eKP-Kv-ZGG" secondAttribute="width" id="6Iq-zx-TdA"/>
+                            <constraint firstItem="WRE-wA-1t8" firstAttribute="height" secondItem="eKP-Kv-ZGG" secondAttribute="height" id="GXd-fv-ieE"/>
+                            <constraint firstItem="WRE-wA-1t8" firstAttribute="centerX" secondItem="eKP-Kv-ZGG" secondAttribute="centerX" id="U8E-n8-jNg"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="CameraImageView" destination="6kY-8U-U4K" id="DCh-my-8Xa"/>
-                        <outlet property="scanButton" destination="sJs-xQ-y1Z" id="0HO-qY-Bty"/>
+                        <outlet property="previewView" destination="WRE-wA-1t8" id="gSr-wQ-wNA"/>
                         <segue destination="glF-Gl-AE8" kind="unwind" identifier="unwindToMyEvent" unwindAction="unwindToMyEventWithSegue:" id="YCF-U6-9jP"/>
                     </connections>
                 </viewController>
@@ -422,7 +418,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQB-8B-Zgx">
-                                <rect key="frame" x="28" y="110" width="49" height="21"/>
+                                <rect key="frame" x="28" y="110" width="48.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
