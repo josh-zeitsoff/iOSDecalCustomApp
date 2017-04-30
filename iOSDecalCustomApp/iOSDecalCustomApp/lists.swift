@@ -50,7 +50,7 @@ func addEvent(date: String, host: String, location: String, username: String) {
     let dict: [String:AnyObject] = [
         "date": date as AnyObject,
         "host" : host as AnyObject,
-        "invitedPeople" : invitedPeople as [String] as AnyObject,
+        //"invitedPeople" : invitedPeople as [String] as AnyObject,
         "location" : location as AnyObject,
         "username" : username as AnyObject
     ]

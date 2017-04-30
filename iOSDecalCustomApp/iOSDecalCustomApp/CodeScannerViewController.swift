@@ -16,7 +16,6 @@ class CodeScannerViewController: UIViewController {
     var scanner: MTBBarcodeScanner?
     
     override func viewDidLoad() {
-        captureNewSession(devicePosition: AVCaptureDevicePosition.front)
         super.viewDidLoad()
         scanner = MTBBarcodeScanner(previewView: previewView)
     }
