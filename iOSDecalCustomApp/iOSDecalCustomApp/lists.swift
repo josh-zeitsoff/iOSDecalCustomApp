@@ -59,6 +59,15 @@ func getInvites(user: CurrentUser, completion: @escaping ([Invites]?) -> Void) {
                     let invite = Invites.init(eventID: eventid, userID: userid, count: count)
                     inviteArray.append(invite)
                 }
+<<<<<<< HEAD
+            completion(inviteArray)
+            }
+        }
+        //make query
+    else {
+        completion(nil)
+    }
+=======
                 completion(inviteArray)
             }
         }
@@ -66,8 +75,13 @@ func getInvites(user: CurrentUser, completion: @escaping ([Invites]?) -> Void) {
         else {
             completion(nil)
         }
+>>>>>>> master
         //else {
         //completion(nil)
         //}
     })
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> master

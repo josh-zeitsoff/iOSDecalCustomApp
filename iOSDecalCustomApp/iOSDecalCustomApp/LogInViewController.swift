@@ -15,7 +15,7 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate {
     
     var handle: FIRAuthStateDidChangeListenerHandle?
 
-    @IBOutlet weak var UserNameInput: UITextField!
+    @IBOutlet weak var EmailInput: UITextField!
     
     @IBOutlet weak var PasswordInput: UITextField!
     
@@ -23,13 +23,11 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate {
         performSegue(withIdentifier: "loginToDash", sender: nil)
     }
     
-    @IBAction func unwindToLogin(segue:UIStoryboardSegue) {
-
-    }
-    
-    
     @IBAction func SignUpButton(_ sender: Any) {
         performSegue(withIdentifier: "loginToSignUp", sender: nil)
+    }
+
+    @IBAction func unwindToLogin(segue: UIStoryboardSegue) {
     }
     
     override func viewDidLoad() {
@@ -61,7 +59,7 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBAction func loginAction(_ sender: AnyObject) {
         
-        if self.UserNameInput.text == "" || self.PasswordInput.text == "" {
+        if self.EmailInput.text == "" || self.PasswordInput.text == "" {
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
             
@@ -74,7 +72,7 @@ class LogInViewController: UIViewController, GIDSignInUIDelegate {
             
         } else {
             
-            FIRAuth.auth()?.signIn(withEmail: self.UserNameInput.text!, password: self.PasswordInput.text!) { (user, error) in
+            FIRAuth.auth()?.signIn(withEmail: self.EmailInput.text!, password: self.PasswordInput.text!) { (user, error) in
                 
                 if error == nil {
                     

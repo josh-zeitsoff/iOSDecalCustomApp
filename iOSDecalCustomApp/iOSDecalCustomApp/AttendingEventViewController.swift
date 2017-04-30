@@ -10,6 +10,9 @@ import UIKit
 import Firebase
 
 class AttendingEventViewController: UIViewController {
+    
+    @IBOutlet weak var BackButton: UIButton!
+    
     @IBOutlet weak var AttendingEventName: UILabel!
 
     @IBOutlet weak var AttendingEventDate: UILabel!
@@ -17,6 +20,7 @@ class AttendingEventViewController: UIViewController {
     @IBOutlet weak var AttendingEventTime: UILabel!
     
     @IBOutlet weak var AttendingEventLocation: UILabel!
+    
     @IBOutlet weak var AttendingEventHost: UILabel!
     
     @IBOutlet weak var MyQRCode: UIImageView!

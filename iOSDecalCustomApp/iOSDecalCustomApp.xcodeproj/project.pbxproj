@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BA2B2EA1E95EB3C00785122 /* lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2B2E91E95EB3C00785122 /* lists.swift */; };
 		4C6436BA1EA82755001F40C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C6436B91EA82755001F40C1 /* GoogleService-Info.plist */; };
+		4C65F4E11EB58588005328C3 /* Invites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65F4E01EB58588005328C3 /* Invites.swift */; };
 		4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE00F1E94752500D649F8 /* AppDelegate.swift */; };
 		4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DE0111E94752500D649F8 /* LogInViewController.swift */; };
 		4C7DE0151E94752500D649F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7DE0131E94752500D649F8 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		0BA2B2E91E95EB3C00785122 /* lists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lists.swift; sourceTree = "<group>"; };
 		4C6436B91EA82755001F40C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "iOSDecalCustomApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C65F4E01EB58588005328C3 /* Invites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invites.swift; sourceTree = "<group>"; };
 		4C7DE00C1E94752500D649F8 /* iOSDecalCustomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDecalCustomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7DE00F1E94752500D649F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7DE0111E94752500D649F8 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -125,8 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				0BA2B2E91E95EB3C00785122 /* lists.swift */,
+<<<<<<< HEAD
+				4C65F4E01EB58588005328C3 /* Invites.swift */,
+=======
 				5BFE7BC91EADFD600028EFA8 /* Event.swift */,
 				5BFE7BCB1EADFF070028EFA8 /* CurrentUser.swift */,
+>>>>>>> master
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -224,8 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				5B5B339C1E9485B300BB29C4 /* CreateEventViewController.swift */,
-				5B9EFE2B1E956E0900890AD1 /* ChooseInvitesViewController.swift */,
-				5B9EFE2D1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift */,
 			);
 			name = CreateEvent;
 			sourceTree = "<group>";
@@ -237,6 +241,8 @@
 				5B9EFE311E9572DF00890AD1 /* WhosComingViewController.swift */,
 				5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */,
 				5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */,
+				5B9EFE2B1E956E0900890AD1 /* ChooseInvitesViewController.swift */,
+				5B9EFE2D1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift */,
 			);
 			name = MyEvent;
 			sourceTree = "<group>";
@@ -563,6 +569,7 @@
 				4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */,
 				5BFE7BCA1EADFD600028EFA8 /* Event.swift in Sources */,
 				5B9EFE341E95732600890AD1 /* WhosComingTableViewCell.swift in Sources */,
+				4C65F4E11EB58588005328C3 /* Invites.swift in Sources */,
 				4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */,
 				5BFE7BCC1EADFF070028EFA8 /* CurrentUser.swift in Sources */,
 				5B9EFE321E9572DF00890AD1 /* WhosComingViewController.swift in Sources */,
