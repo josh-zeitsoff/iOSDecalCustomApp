@@ -11,9 +11,11 @@ import Firebase
 
 class WhosComingViewController: UIViewController {
 
-    @IBOutlet weak var WhosComingTableView: UITableView!
-    
+
     @IBOutlet weak var BackButton: UIButton!
+    
+    @IBOutlet weak var WhosComingTableView: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

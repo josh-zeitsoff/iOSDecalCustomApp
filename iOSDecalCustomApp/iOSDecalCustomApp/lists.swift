@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import FirebaseStorage
+import FirebaseDatabase
 
 //will change later, prob not string
 var events: [String: [String]] = ["Current Events": [], "Invited To": []]
@@ -34,3 +36,41 @@ func getPerson(indexPath: IndexPath) -> String? {
     }
     return nil
 }
+
+func addInvite(eventID: String, userID: String, count: Int) {
+    let dbRef = FIRDatabase.database().reference()
+    let dict: [String:AnyObject] = [
+        "userid": userID as AnyObject,
+        "eventid": eventID as AnyObject,
+        "count": count as AnyObject
+    ]
+    dbRef.child(firInvitesNode).childByAutoId().setValue(dict)
+}
+
+func getInvites(user: CurrentUser, completion: @escaping ([Invites]?) -> Void) {
+    let dbRef = FIRDatabase.database().reference()
+    var inviteArray: [Invites] = []
+    dbRef.child(firInvitesNode).observeSingleEvent(of: .value, with: {
+        (snapshot) in
+        if snapshot.exists() {
+            if let invitesDict = snapshot.value as? [String : AnyObject] {
+                for key in invitesDict.keys {
+                    let userid = invitesDict[key]?["userid"] as! String
+                    let eventid = invitesDict[key]?["eventid"] as! String
+                    let count = invitesDict[key]?["count"] as! String
+                    let invite = Invites.init(eventID: eventid, userID: userid, count: count)
+                    inviteArray.append(invite)
+                }
+            completion(inviteArray)
+            }
+        }
+        //make query
+    else {
+        completion(nil)
+    }
+        //else {
+        //completion(nil)
+        //}
+    })
+}
+

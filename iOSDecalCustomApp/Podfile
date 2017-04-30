@@ -11,6 +11,7 @@ target 'iOSDecalCustomApp' do
   pod 'Firebase/Auth'
   pod 'Google/SignIn'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod ‘iOS-QR-Code-Encoder’
 
   target 'iOSDecalCustomAppTests' do

@@ -11,6 +11,10 @@ import Firebase
 
 class MyEventViewController: UIViewController {
 
+    @IBOutlet weak var Invite: UIButton!
+    
+    @IBOutlet weak var BackButton: UIButton!
+    
     @IBOutlet weak var EventName: UILabel!
     
     @IBOutlet weak var EventLocation: UILabel!

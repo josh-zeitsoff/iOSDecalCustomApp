@@ -16,19 +16,12 @@ class CreateEventViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var EventLocationInput: UITextField!
     
-    
-
     @IBOutlet weak var EventDateAndTimePicker: UIDatePicker!
     
-    
-    @IBAction func CreateEventButton(_ sender: Any) {
-        performSegue(withIdentifier: "unwindToDash", sender: self)
+    @IBAction func CreateEventButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "unwindToDash", sender: self)
+        // Create event and send data
     }
-     
-    @IBAction func unwindToCreate(segue:UIStoryboardSegue) {
-        
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

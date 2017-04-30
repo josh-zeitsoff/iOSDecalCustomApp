@@ -9,9 +9,6 @@
 import UIKit
 
 class WhosComingTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var AttendeeName: UILabel!
-    @IBOutlet weak var AttendeeUsername: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -39,7 +39,6 @@ class SignUpViewController: UIViewController {
     
     //Authenticate a sign up account
     @IBAction func createAccountAction(_ sender: AnyObject) {
-        
         if EmailInput.text == "" {
             let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
             
