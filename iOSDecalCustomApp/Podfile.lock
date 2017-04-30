@@ -54,7 +54,9 @@ PODS:
   - GTMSessionFetcher/Core (1.1.9)
   - GTMSessionFetcher/Full (1.1.9):
     - GTMSessionFetcher/Core (= 1.1.9)
-  - iOS-QR-Code-Encoder (0.0.1)
+  - MTBBarcodeScanner (5.0.0)
+  - QRCode (2.0)
+  - SwiftQRCode (3.0.2)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -62,7 +64,9 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - Google/SignIn
-  - iOS-QR-Code-Encoder
+  - MTBBarcodeScanner
+  - QRCode
+  - SwiftQRCode
 
 SPEC CHECKSUMS:
   Firebase: 2b1cdfba1cda8589f32904a697cc753322bff9d8
@@ -77,8 +81,14 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
-  iOS-QR-Code-Encoder: 5aef73d5d6ecdb2031ced14e0e6eadfb8c637514
+  MTBBarcodeScanner: f7ac0087f2467ba73e4d429bb1bc2098fe11b09f
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  SwiftQRCode: 280589699d84195c2c573011aa52f2c015c31c34
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: b6acf978c3daa29ff4834fdd38ab34875e55f10e
+=======
+PODFILE CHECKSUM: f509bc02183ed7f9a53c95e66bccc2feaa7d7d23
+>>>>>>> master
 
 COCOAPODS: 1.2.0

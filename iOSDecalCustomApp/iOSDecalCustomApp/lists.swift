@@ -5,7 +5,6 @@
 //  Created by Angela Wong on 4/5/17.
 //  Copyright © 2017 Cathy Pham Le. All rights reserved.
 //
-
 import Foundation
 import UIKit
 import FirebaseStorage
@@ -14,7 +13,6 @@ import FirebaseDatabase
 //will change later, prob not string
 var events: [String: [String]] = ["Current Events": [], "Invited To": []]
 //
-
 let eventTypes = ["Current Events", "Invited To"]
 
 func getEvent(indexPath: IndexPath) -> String? {
@@ -61,6 +59,7 @@ func getInvites(user: CurrentUser, completion: @escaping ([Invites]?) -> Void) {
                     let invite = Invites.init(eventID: eventid, userID: userid, count: count)
                     inviteArray.append(invite)
                 }
+<<<<<<< HEAD
             completion(inviteArray)
             }
         }
@@ -68,9 +67,21 @@ func getInvites(user: CurrentUser, completion: @escaping ([Invites]?) -> Void) {
     else {
         completion(nil)
     }
+=======
+                completion(inviteArray)
+            }
+        }
+            //make query
+        else {
+            completion(nil)
+        }
+>>>>>>> master
         //else {
         //completion(nil)
         //}
     })
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master

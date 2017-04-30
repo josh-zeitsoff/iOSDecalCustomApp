@@ -28,6 +28,9 @@
 		5B9EFE341E95732600890AD1 /* WhosComingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */; };
 		5B9EFE361E95742B00890AD1 /* CodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */; };
 		5B9EFE381E95752800890AD1 /* AttendingEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */; };
+		5BFE7BC81EADF5920028EFA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE7BC71EADF5920028EFA8 /* Constants.swift */; };
+		5BFE7BCA1EADFD600028EFA8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE7BC91EADFD600028EFA8 /* Event.swift */; };
+		5BFE7BCC1EADFF070028EFA8 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE7BCB1EADFF070028EFA8 /* CurrentUser.swift */; };
 		693D81D135FF2253CCBB2CBB /* Pods_iOSDecalCustomAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA18DACB56108E403C5CFBD0 /* Pods_iOSDecalCustomAppUITests.framework */; };
 		B774F10E22622829EAEC1FD5 /* Pods_iOSDecalCustomApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642585794FEDB162D2F18DBF /* Pods_iOSDecalCustomApp.framework */; };
 		D3EB6840B83FF1001A4C95C5 /* Pods_iOSDecalCustomAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A2E783A49EB1D84E1189DD /* Pods_iOSDecalCustomAppTests.framework */; };
@@ -79,6 +82,9 @@
 		5B9EFE331E95732600890AD1 /* WhosComingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhosComingTableViewCell.swift; sourceTree = "<group>"; };
 		5B9EFE351E95742B00890AD1 /* CodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeScannerViewController.swift; sourceTree = "<group>"; };
 		5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingEventViewController.swift; sourceTree = "<group>"; };
+		5BFE7BC71EADF5920028EFA8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5BFE7BC91EADFD600028EFA8 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5BFE7BCB1EADFF070028EFA8 /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		642585794FEDB162D2F18DBF /* Pods_iOSDecalCustomApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDecalCustomApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931B6A71A8276493A44001B5 /* Pods-iOSDecalCustomAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDecalCustomAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDecalCustomAppTests/Pods-iOSDecalCustomAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7A2E783A49EB1D84E1189DD /* Pods_iOSDecalCustomAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDecalCustomAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				0BA2B2E91E95EB3C00785122 /* lists.swift */,
+<<<<<<< HEAD
 				4C65F4E01EB58588005328C3 /* Invites.swift */,
+=======
+				5BFE7BC91EADFD600028EFA8 /* Event.swift */,
+				5BFE7BCB1EADFF070028EFA8 /* CurrentUser.swift */,
+>>>>>>> master
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -162,6 +173,7 @@
 		4C7DE00E1E94752500D649F8 /* iOSDecalCustomApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BFE7BC41EADF54B0028EFA8 /* AppUtilities */,
 				0BA2B2E41E95E45F00785122 /* Model */,
 				5B9EFE261E956B7200890AD1 /* AttendingEvent */,
 				5B9EFE251E956B5F00890AD1 /* MyEvent */,
@@ -241,6 +253,14 @@
 				5B9EFE371E95752800890AD1 /* AttendingEventViewController.swift */,
 			);
 			name = AttendingEvent;
+			sourceTree = "<group>";
+		};
+		5BFE7BC41EADF54B0028EFA8 /* AppUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5BFE7BC71EADF5920028EFA8 /* Constants.swift */,
+			);
+			name = AppUtilities;
 			sourceTree = "<group>";
 		};
 		6A41010784173E4A56A2B8AF /* Pods */ = {
@@ -333,6 +353,7 @@
 				TargetAttributes = {
 					4C7DE00B1E94752400D649F8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L72278KK8K;
 						ProvisioningStyle = Automatic;
 					};
 					4C7DE01F1E94752500D649F8 = {
@@ -543,11 +564,14 @@
 				5B9EFE361E95742B00890AD1 /* CodeScannerViewController.swift in Sources */,
 				5B9EFE2C1E956E0900890AD1 /* ChooseInvitesViewController.swift in Sources */,
 				5B9EFE2E1E956E7400890AD1 /* ChooseInvitesTableViewCell.swift in Sources */,
+				5BFE7BC81EADF5920028EFA8 /* Constants.swift in Sources */,
 				0BA2B2EA1E95EB3C00785122 /* lists.swift in Sources */,
 				4C7DE0121E94752500D649F8 /* LogInViewController.swift in Sources */,
+				5BFE7BCA1EADFD600028EFA8 /* Event.swift in Sources */,
 				5B9EFE341E95732600890AD1 /* WhosComingTableViewCell.swift in Sources */,
 				4C65F4E11EB58588005328C3 /* Invites.swift in Sources */,
 				4C7DE0101E94752500D649F8 /* AppDelegate.swift in Sources */,
+				5BFE7BCC1EADFF070028EFA8 /* CurrentUser.swift in Sources */,
 				5B9EFE321E9572DF00890AD1 /* WhosComingViewController.swift in Sources */,
 				5B9EFE2A1E956C4E00890AD1 /* EventDashboardTableViewCell.swift in Sources */,
 				5B9EFE281E956BD400890AD1 /* EventDashboardViewController.swift in Sources */,
@@ -705,9 +729,10 @@
 			baseConfigurationReference = D49CF0366B7B9F9F4CDD4E94 /* Pods-iOSDecalCustomApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L72278KK8K;
 				INFOPLIST_FILE = iOSDecalCustomApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Cathy-Pham-Le.iOSDecalCustomApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Cathy-Pham-Le.iOSDecalCustomApp1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -718,9 +743,10 @@
 			baseConfigurationReference = FDACCAF0FA6CABF70A7DC2F3 /* Pods-iOSDecalCustomApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L72278KK8K;
 				INFOPLIST_FILE = iOSDecalCustomApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Cathy-Pham-Le.iOSDecalCustomApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Cathy-Pham-Le.iOSDecalCustomApp1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
